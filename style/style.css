@@ -118,45 +118,7 @@ ul.menu_icones li {
 
 /* TABLET */
 
-@media screen and (max-width: 860px) {
-    body {
-        background-repeat: repeat;
-    }
-    nav {
-        display: none;
-    }
-    .section_principal {
-        flex-direction: column;
-    }
-    .conteudo {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        height: 66%;
-    }
-    .conteudo h1 {
-        font-size: 3.5em;
-    }
-    .conteudo h2 {
-        font-size: 1.8em;
-    }
-    .conteudo p {
-        text-align: center;
-        font-size: 1.3em;
-    }
-    .cta {
-        background-color: white;
-        color: rgb(95, 93, 93);
-    }
-    .banner {
-        text-align: center;
-    }
-    .iphone_azul_branco {
-        width: 98%;
-        height: 80vh;
-        opacity: 1;
-    }
-}
+
 
 
 /* MOBILE */
