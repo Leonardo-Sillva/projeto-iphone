@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+:root {
+    --font_apple: 'Inter Tight', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+a:hover {
+    transition:ease all 0.1s;
+    color: rgb(104, 99, 99);
+}
+.menu_principal a:hover {
+    transition:ease all 0.1s;
+    color: rgb(104, 99, 99);
+    border-bottom: 2px solid gray;
+}
+body {
+    background-image: url(../img/fundo-nuvem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+.logo_apple {
+    transform: scale(0.5);
+    filter: invert(1);
+    width: 60px;
+    margin: 0 100px 0 20px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: var(--font_apple);
+    font-size: 0.97em;
+    font-weight: bold;
+}
+ul.menu_principal {
+    display: flex;
+}
+ul.menu_principal li {
+    margin-right: 5vw;
+}
+ul.menu_icones {
+    display: flex;
+    margin-right: 1vw;
+}
+ul.menu_icones li {
+    margin-right: 3vw;
+}
+
+/* conteúdo */
+
+.section_principal {
+    display: flex;
+    height: 88.2vh;
+}
+.conteudo {
+    display: inline-block;
+    width: 50%;
+    height: 95%;
+    text-align:justify;
+    padding: 5%;
+}
+.conteudo h1 {
+    margin-bottom: 10px;
+    font-family: var(--font_apple);
+    font-size: 2.5em;
+    color: white;
+}
+.conteudo h2 {
+    margin-bottom: 25px;
+    font-family: var(--font_apple);
+    color: white;
+}
+.conteudo p {
+    margin-bottom: 40px;
+    text-align: justify;
+    color: rgb(104, 99, 99);
+    font-family: var(--font_apple);
+    font-weight: 500;
+}
+.banner {
+    position: relative;
+    width: 50%;
+}   
+.cta {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font_apple);
+    font-weight: bold;
+}
+.cta:hover {
+    transition: ease all 0.2s;
+    background-color: white;
+}
+.iphone_azul_branco {
+    position: absolute;
+    right: 2;
+    height: 85vh;
+    opacity: 0.7;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 860px) {
+    body {
+        background-repeat: repeat;
+    }
+    nav {
+        display: none;
+    }
+    .section_principal {
+        flex-direction: column;
+    }
+    .conteudo {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 66%;
+    }
+    .conteudo h1 {
+        font-size: 3.5em;
+    }
+    .conteudo h2 {
+        font-size: 1.8em;
+    }
+    .conteudo p {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .cta {
+        background-color: white;
+        color: rgb(95, 93, 93);
+    }
+    .banner {
+        text-align: center;
+    }
+    .iphone_azul_branco {
+        width: 98%;
+        height: 80vh;
+        opacity: 1;
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 500px) {
+    body {
+        background-repeat: repeat;
+    }
+    nav {
+        display: none;
+    }
+    .section_principal {
+        flex-direction: column;
+    }
+    .conteudo {
+        display: flex;
+        
+        flex-direction: column;
+        width: 100%;
+        height: 66%;
+        padding: 5%;
+    }
+    .cta {
+        background-color: white;
+        color: rgb(99, 97, 97);
+    }
+    .banner {
+        width: 100%;
+    }
+    .iphone_azul_branco {
+        width: 98%;
+        height: 70vh;
+        opacity: 1;
+    }
+  }
